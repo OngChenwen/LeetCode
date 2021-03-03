@@ -4,23 +4,19 @@ import java.util.Arrays;
 
 public class ArraysEqual {
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
-        String String1 = "";
-        String String2 = "";
-        for (int i = 0; i < word1.length; i++) {
-            String1 += word1[i];
+        StringBuilder String1 = new StringBuilder();
+        StringBuilder String2 = new StringBuilder();
+        for (String value : word1) {
+            String1.append(value);
         }
 
-        for (int i = 0; i < word2.length; i++) {
-            String2 += word2[i];
+        for (String s : word2) {
+            String2.append(s);
         }
 
         System.out.println("S1: " + String1);
         System.out.println("S2: " + String2);
-        if (String1.equals(String2)){
-            return true;
-        } else{
-            return false;
-        }
+        return String1.toString().equals(String2.toString());
     }
 
 }

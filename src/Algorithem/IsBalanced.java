@@ -1,6 +1,10 @@
 package Algorithem;
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Stack;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class IsBalanced {
     // get number of input character
@@ -19,6 +23,7 @@ public class IsBalanced {
 
     public boolean Balanced(String s){
         Stack<Character> stack = new Stack<>();
+        //括号出现次数
         int counter = 0;
 
         if(s.isEmpty()){
@@ -40,7 +45,7 @@ public class IsBalanced {
                 if(stack.isEmpty()) return false;
                 // 检查是否有匹配的左括号
                 if(number + checkInputBrackets(stack.peek()) == 0){
-                    //存在 匹配的左括号， stack 去除匹配了的左括号
+                    //存在 匹配的左括号， stack 去除匹配了的左括号pu
                     stack.pop();
                     System.out.println("Success");
                 }

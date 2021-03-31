@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AllSub {
-    List<List<Integer>> permute(int[] nums){
+     static List<List<Integer>> permute(int[] nums){
         List<List<Integer>> ans = new ArrayList<>();
+        backTracking(nums,ans, new ArrayList<>());
         return ans;
     }
 
-    void backTracking(int[] nums, List<List<Integer>> res, List<Integer> subs){
+    static void backTracking(int[] nums, List<List<Integer>> res, List<Integer> subs){
         if (subs.size() == nums.length) {
             res.add(new ArrayList<>(subs));
             return;}
@@ -19,9 +20,12 @@ public class AllSub {
             subs.add(nums[i]);
             backTracking(nums,res,subs);
             subs.remove(subs.size()-1);
-
         }
+    }
 
+    public static void main(String[] args) {
+        int[] example = {1,2,3};
+        System.out.println(permute(example));
     }
 }
 

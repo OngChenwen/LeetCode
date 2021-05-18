@@ -47,7 +47,6 @@ public class IsBalanced {
                 if(number + checkInputBrackets(stack.peek()) == 0){
                     //存在 匹配的左括号， stack 去除匹配了的左括号pu
                     stack.pop();
-                    System.out.println("Success");
                 }
             }
         }

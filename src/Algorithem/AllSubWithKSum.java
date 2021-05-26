@@ -27,6 +27,6 @@ public class AllSubWithKSum {
     }
 
     public static void main(String[] args) {
-        System.out.println(combinationSum3(3,7));
+        System.out.println(combinationSum3(4,13));
     }
 }

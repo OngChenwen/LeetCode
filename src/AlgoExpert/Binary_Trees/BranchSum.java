@@ -1,9 +1,9 @@
-package AlgoExpert;
+package AlgoExpert.Binary_Trees;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BranchSum_Easy {
+public class BranchSum {
     public static class BinaryTree {
         int value;
         BinaryTree left;
@@ -15,7 +15,7 @@ public class BranchSum_Easy {
             this.right = null;
         }
     }
-
+    // recursion
     public static List<Integer> branchSums(BinaryTree root) {
         List<Integer> result = new ArrayList<>();
         calculate(root,0,result);
@@ -24,14 +24,16 @@ public class BranchSum_Easy {
     }
 
     public static void calculate(BinaryTree root, int sum, List<Integer> sums){
-        if(root == null) return;
-        int Sum  = root.value + sum;
-        if(root.left == null && root.right == null){
-            sums.add(sum + Sum);
+        if (root == null) return;
+        int Sum = sum + root.value;
+        if (root.left == null && root.right == null){
+            sums.add(Sum);
             return;
         }
 
-        calculate(root.left, Sum, sums);
-        calculate(root.right, Sum, sums);
+        calculate(root.left,Sum,sums);
+        calculate(root.right,Sum,sums);
     }
+
+
 }

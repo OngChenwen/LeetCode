@@ -1,6 +1,7 @@
 package AlgoExpert.Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MonotonicArray {
@@ -12,7 +13,7 @@ public class MonotonicArray {
             int pre = array[i-1];
             if (array[i] > pre){
                 resultIncreasing.add(true);
-            } else {
+            } else if (pre > array[i]){
                 resultIncreasing.add(false);
             }
         }
@@ -21,14 +22,23 @@ public class MonotonicArray {
             int pre = array[i-1];
             if (array[i] < pre){
                 resultDecreasing.add(true);
-            } else {
+            } else  if (array[i] > pre){
                 resultDecreasing.add(false);
             }
         }
 
-        return resultDecreasing.contains(false) || resultIncreasing.contains(false);
+        return checkAll(resultDecreasing) || checkAll(resultIncreasing);
     }
 
+    public static boolean checkAll(List<Boolean> list){
+        boolean flag = true;
+
+        for (int i = 0; i < list.size(); i++) {
+            if(!list.get(i)) flag = false;
+        }
+
+        return flag;
+    }
     //find the counter Case
     public static boolean isMonotonic_2(int[] array) {
         boolean down = true;

@@ -1,4 +1,4 @@
-package Binary_Search;
+package AlgoExpert.Searching;
 
 public class BinarySearch {
     //查找具体值
@@ -20,7 +20,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {1,2,3};
-        System.out.println(binary_search(numbers,5));
+        int[] numbers = {0,1,21,33,45,45,61,71,72,73};
+        System.out.println(binary_search(numbers,33));
     }
 }

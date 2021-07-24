@@ -18,9 +18,18 @@ public class BinarySearch {
         }
         return -1;
     }
+    
+    public static int Binary_2D_Search(int[][] matrix, int target){
+        int position = 0;
+        for (int[] value : matrix) {
+            position = binary_search(value,target);
+        }
+        
+        return position;
+    }
 
     public static void main(String[] args) {
-        int[] numbers = {0,1,21,33,45,45,61,71,72,73};
-        System.out.println(binary_search(numbers,33));
+        int[][] numbers = {{2,5,8,12,19},{1,3,4,5,15}};
+        System.out.println((Binary_2D_Search(numbers,5)));
     }
 }

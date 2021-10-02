@@ -13,7 +13,7 @@ public class Bracket_Sort {
 
         System.out.println("- - - - -");
         bracket_sort(array);
-        System.out.println("Arrays.toString(array) = " + Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 
     public static void bracket_sort(int[] num){

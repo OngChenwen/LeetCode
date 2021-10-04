@@ -74,7 +74,7 @@ public class Intelligent_Substring {
     {
         // initialise the String
         // b, d
-        String P = "abcde", Q = "10101111111111111111111111";
+        String P = "giraffe", Q = "01111001111111111011111111";
 
         int K = 2;
 
@@ -90,6 +90,8 @@ public class Intelligent_Substring {
         for (int i = 0; i < charValue.length(); i++) {
             if(charValue.charAt(i) == '0') set.add((char)('a' + i));
         }
+
+        System.out.println(set);
 
         int left = 0, ans = 0, counter = 0;
         for (int i = 0; i < s.length(); i++) {

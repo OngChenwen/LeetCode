@@ -12,6 +12,8 @@ public class DiskSpaceAnalysis {
             for (int i = 0; i < nums.length; i++) {
                 max = Math.max(max,nums[i]);
             }
+
+            return max;
         }
 
         int left = 0, right = k - 1;
@@ -32,7 +34,7 @@ public class DiskSpaceAnalysis {
     }
 
     public static void main(String[] args) {
-        int[] numbers = new int[]{1,1,1};
-        System.out.println(getMax(numbers,2));
+        int[] numbers = new int[]{8,2,4,6};
+        System.out.println(getMax(numbers,3));
     }
 }

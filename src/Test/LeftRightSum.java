@@ -3,7 +3,7 @@ package Test;
 public class LeftRightSum {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{2,3,12,7,1,11,2,3};
+        int[] arr = new int[]{6,2,3,4,6,5,10};
         System.out.println(helper(arr));
     }
 

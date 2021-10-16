@@ -17,15 +17,15 @@ public class PreSum_LeftRightSum {
         }
 
 
-//        for (int value : front_pre) {
-//            System.out.print(value + " ");
-//        }
-//
-//        System.out.println();
-//
-//        for (int value: back_pre) {
-//            System.out.print(value + " ");
-//        }
+        for (int value : front_pre) {
+            System.out.print(value + " ");
+        }
+
+        System.out.println();
+
+        for (int value: back_pre) {
+            System.out.print(value + " ");
+        }
 
         int ans = 0;
         for (int i = 0; i < front_pre.length; i++) {
@@ -35,7 +35,7 @@ public class PreSum_LeftRightSum {
             }
         }
 
-        System.out.println();
-        System.out.println(ans + " " + (array.length - ans));
+//        System.out.println();
+//        System.out.println(ans + " " + (array.length - ans));
     }
 }

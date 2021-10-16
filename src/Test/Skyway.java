@@ -44,7 +44,6 @@ public class Skyway {
                         y =	j;
                     } else if(x == i) {
                         if(j < y) {
-                            x = i;
                             y = j;
                         }
 

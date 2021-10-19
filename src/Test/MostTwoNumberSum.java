@@ -33,7 +33,7 @@ public class MostTwoNumberSum {
         System.out.println("Exact, or Nearest, elements that add to target value " + t + " are found at index " + i + " and index " + j + " adding to " + actual);
     }
 
-    // time complexity O(tn) which t is the target number
+    // time complexity O(n) which t is the target number
     // space complexty O(n);
     static void findNearestElements(int[] nums, int target) {
         int left = 0, right = nums.length - 1, mindiff = Integer.MAX_VALUE;

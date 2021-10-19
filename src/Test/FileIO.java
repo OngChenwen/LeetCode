@@ -46,8 +46,7 @@ public class FileIO {
             String out = reader.nextLine();
             System.out.println(out);
         }
-
-
-
     }
+
+
 }

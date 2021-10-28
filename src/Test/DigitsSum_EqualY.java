@@ -1,13 +1,15 @@
 package Test;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DigitsSum_EqualY {
-
+    static List<Integer> ans = new ArrayList<>();
     public static void main(String[] args) {
 
-        System.out.println(helper(20,5));
+        System.out.println(helper(500,12));
+        System.out.println(ans);
+
     }
 
     static int helper(int number, int target){
@@ -16,7 +18,7 @@ public class DigitsSum_EqualY {
         dp[0] = 0;
 
         for (int i = 1; i <= number; i++) {
-            int counter = 0, sum = 0;
+            int sum = 0;
             int start = i;
 
             while(start>0){
@@ -26,15 +28,14 @@ public class DigitsSum_EqualY {
                 start = start/10;
             }
 
+            dp[i] = sum == target ? dp[i-1] + 1: dp[i - 1];
+
             if (sum == target){
-                dp[i] = dp[i - 1] + 1;
-            } else
-            {
-                dp[i] = dp[i - 1];
+                ans.add(i);
             }
 
         }
-        System.out.println(Arrays.toString(dp));
+
         return dp[number];
     }
 }

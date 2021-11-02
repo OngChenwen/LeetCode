@@ -1,10 +1,10 @@
 package DSA;
 
-import java.util.Queue;
 
 public class TestClass {
     public static void main(String[] args) {
-        QueueWithLinkedList myQueue = new QueueWithLinkedList();
+//        DoublyStack stack = new DoublyStack();
+//        SingleQueue myQueue = new SingleQueue();
 //        StackWithLinkedList stack = new StackWithLinkedList();
 //        stack.push(11);
 //        stack.push(22);
@@ -21,12 +21,5 @@ public class TestClass {
 //
 //        stack.display();
 
-        myQueue.push(1);
-        myQueue.push(2);
-        myQueue.push(3);
-        myQueue.pop();
-        myQueue.pop();
-
-        System.out.println(myQueue.peek());
     }
 }

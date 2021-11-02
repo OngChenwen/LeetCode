@@ -1,19 +1,17 @@
-package DSA;
+package DSA.Single;
 
-import java.util.List;
-
-public class QueueWithLinkedList {
-    ListNode head, tail;
+public class SingleQueue {
+    SingleListNode head, tail;
     int size;
 
-    public QueueWithLinkedList() {
-        head = new ListNode();
-        tail = new ListNode();
+    public SingleQueue() {
+        head = new SingleListNode();
+        tail = new SingleListNode();
         size = 0;
     }
 
-    void push(int data){
-        ListNode node = new ListNode(data);//有新元素入栈，创建一个相应的结点对象，申请空间
+    public void push(int data){
+        SingleListNode node = new SingleListNode(data);//有新元素入栈，创建一个相应的结点对象，申请空间
         if(size == 0) { //如果是添加的第一个队列，将其设置为头结点
             head = node;
         }else { //否则将尾结点的下一个结点更新为新结点
@@ -25,7 +23,7 @@ public class QueueWithLinkedList {
 
     }
 
-    void pop(){
+    public void pop(){
         if(size == 0) {
             System.out.println("这是一个空队列");
             tail = null; //更新tail
@@ -37,15 +35,15 @@ public class QueueWithLinkedList {
         }
     }
 
-    int peek(){
+    public int peek(){
         return head.val;
     }
 
-    boolean isEmpty(){
+    public boolean isEmpty(){
         return head == null;
     }
 
-    int size(){
+    public int size(){
         return size;
     }
 

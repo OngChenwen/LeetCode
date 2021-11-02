@@ -1,26 +1,26 @@
-package DSA;
+package DSA.Single;
 
 
 
-public class StackWithLinkedList {
-    private ListNode head;
-    public StackWithLinkedList(){
-        head = new ListNode();
+public class SingleStack {
+    private SingleListNode head;
+    public SingleStack(){
+        head = new SingleListNode();
     }
 
-    void push(int x){
-        ListNode tmp = new ListNode(x);
+    public void push(int x){
+        SingleListNode tmp = new SingleListNode(x);
         tmp.next = head;
         head = tmp;
     }
 
-    int pop(){
+    public int pop(){
         int ans = head.val;
         head = head.next;
         return ans;
     }
 
-    int peek(){
+    public int peek(){
         if(!isEmpty()){
             return head.val;
         } else{
@@ -29,13 +29,13 @@ public class StackWithLinkedList {
         }
     }
 
-    boolean isEmpty(){
+    public boolean isEmpty(){
         return head == null;
     }
 
-    void display(){
+    public void display(){
         if(head == null) return;
-        ListNode tmp = head;
+        SingleListNode tmp = head;
         while (tmp != null){
             System.out.print(tmp.val);
             tmp = tmp.next;

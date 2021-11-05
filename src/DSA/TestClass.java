@@ -1,6 +1,8 @@
 package DSA;
 
 
+
+
 public class TestClass {
     public static void main(String[] args) {
 //        DoublyStack stack = new DoublyStack();
@@ -20,6 +22,16 @@ public class TestClass {
 //        stack.pop();
 //
 //        stack.display();
+
+        Queue q = new Queue();
+        q.push(1);
+        System.out.println(q.isEmpty());
+        q.push(3);
+        q.display();
+        q.pop();
+        q.push(4);
+        q.push(7);
+        q.display();
 
     }
 }

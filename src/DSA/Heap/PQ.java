@@ -22,7 +22,7 @@ public class PQ {
     }
 
     public void shiftUp(int i){
-        while (i > 0 && num[parent(i)] < num[i]){
+        while (i > 0 && num[i] > num[parent(i)]){
             swap(parent(i),i);
             i = parent(i);
         }
@@ -50,17 +50,16 @@ public class PQ {
         shiftUp(size);
     }
 
-    public void remove(int i){
-        num[i] = peek() + 1;
-        shiftUp(i);
-        exactMax();
-    }
+//    public void poll(int i){
+//        num[i] = peek() + 1;
+//        shiftUp(i);
+//        exactMax();
+//    }
 
     public int exactMax(){
         int res = num[0];
         num[0] = num[size];
         size = size - 1;
-
         shiftDown(0);
         return res;
     }

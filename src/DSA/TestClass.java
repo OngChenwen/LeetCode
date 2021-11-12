@@ -2,6 +2,12 @@ package DSA;
 
 import DSA.Heap.MaxHeap;
 import DSA.Heap.MinHeap;
+import DSA.Heap.PQ;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class TestClass {
     public static void main(String[] args) {
@@ -44,19 +50,21 @@ public class TestClass {
 //        }
 //        System.out.println(minHeap.peek());
 
-        MaxHeap maxHeap = new MaxHeap(6);
-        maxHeap.add(4);
-        maxHeap.add(21);
-        maxHeap.add(22);
-        maxHeap.add(59);
-        maxHeap.add(31);
+        PQ pq = new PQ();
+        List<Integer> tmp = new ArrayList<>(Arrays.asList(95,22,53,64,66,31,24,86,221));
 
-//        for (int i = 0; i < 2; i++) {
-//            maxHeap.poll();
-//        }
+        for (int n: tmp){
+            pq.add(n);
+        }
 
-        maxHeap.poll();
-        maxHeap.poll();
-        System.out.println(maxHeap.poll());
+        for (int i = 0; i < 1 ; i++) {
+            pq.exactMax();
+        }
+        Collections.sort(tmp);
+        System.out.println("tmp = " + tmp);
+        System.out.println(pq.peek());
+
+
     }
+
 }

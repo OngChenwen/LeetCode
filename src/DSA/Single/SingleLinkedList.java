@@ -64,13 +64,24 @@ public class SingleLinkedList {
 
     public void display(){
         SingleListNode tmp = head;
-        while (tmp != null){
+        while (tmp!= null){
             System.out.print(tmp.val + "->");
             tmp = tmp.next;
         }
     }
 
+    public boolean contains(int x){
+        if(isEmpty()) return false;
+        SingleListNode tmp = head;
+        while(tmp != null){
+            if(tmp.val == x) return true;
+            tmp = tmp.next;
+        }
+        return false;
+    }
 
-
+    public int size(){
+        return size;
+    }
 
 }

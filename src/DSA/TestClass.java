@@ -41,8 +41,13 @@ public class TestClass {
 
         System.out.println();
         // check Empty
-
         System.out.println(linkedList.isEmpty());
+
+        // check contains
+        System.out.println(linkedList.contains(1));
+
+        // check size
+        System.out.println(linkedList.size());
 
     }
 

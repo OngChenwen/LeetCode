@@ -60,8 +60,34 @@ public class Quick_Sort {
 
     public static void main(String[] args) {
         int[] nums = new int[]{3,5,38,47,22,21,56};
-        quickSort(nums,0, nums.length - 1);
+        quick(nums,0, nums.length - 1);
         // result : 3, 5, 21, 22, 38, 47, 56
         System.out.println(Arrays.toString(nums));
+    }
+
+    static void quick(int[] nums, int left, int right){
+        if(left > right) return;
+        int mid = left + (right - left)/2;
+        int pivot = nums[mid];
+        int i = left,j = right;
+        while(i<=j){
+            while(i <= j && nums[i] < pivot){
+                i++;
+            }
+
+            while(i <= j && nums[j] > pivot){
+                j--;
+            }
+            if(i <= j){
+                int tmp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = tmp;
+                i++;
+                j--;
+            }
+        }
+
+        quick(nums,left,j);
+        quick(nums,i,right);
     }
 }

@@ -6,13 +6,12 @@ import java.util.List;
 public class AllSubWithKSum {
     public static List<List<Integer>> combinationSum3(int k, int n){
         List<List<Integer>> ans = new ArrayList<>();
-        List<List<Integer>> result = new ArrayList<>();
         backTracking(n,k, ans, new ArrayList<>(),1);
 
         return ans;
     }
 
-    public static void backTracking(int n, int k , List<List<Integer>> list, List<Integer> tempList, int start){
+    public static void backTracking(int n, int k , List<List<Integer>> list, List<Integer> tempList,int start){
         if (tempList.size() == k || n<=0){
             if (tempList.size() == k && n ==0)
                 list.add(new ArrayList<>(tempList));
@@ -26,6 +25,7 @@ public class AllSubWithKSum {
     }
 
     public static void main(String[] args) {
-        System.out.println(combinationSum3(4,13));
+//        [[1, 1, 5], [1, 2, 4], [1, 3, 3], [2, 2, 3]]
+        System.out.println(combinationSum3(3,7));
     }
 }

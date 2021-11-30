@@ -4,14 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Leet1079 {
-    // unsolved
     static List<String> ans = new ArrayList<>();
     public static int numTilePossibilities(String tiles) {
-        backTracking(ans,0, new StringBuffer(), tiles);
+        for (int i = 1; i <=tiles.length(); i++) {
+            backTracking(tiles, new boolean[tiles.length() + 1],i,1,new StringBuilder());
+        }
+        System.out.println(ans);
         return ans.size();
     }
 
-    public static void backTracking(List<String> list, int start, StringBuffer stringBuffer, String titles){
+    public static void backTracking(String words, boolean[] used, int k, int depth,StringBuilder tmp){
+
+        if(k == depth){
+            ans.add(tmp.toString());
+            return;
+        }
+       for(int i = 0; i < words.length(); i++){
+           used[i] = true;
+           tmp.append(words.charAt(i));
+           backTracking(words, used,k,depth + 1,tmp);
+           tmp.setLength(tmp.length() - 1);
+           used[i] = false;
+       }
     }
 
     public static void main(String[] args) {

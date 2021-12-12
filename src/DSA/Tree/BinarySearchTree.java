@@ -1,21 +1,12 @@
 package DSA.Tree;
 
 public class BinarySearchTree {
-    class TreeNode{
+    static class TreeNode{
         int val;
         TreeNode left;
         TreeNode right;
-
-        public TreeNode() {}
-
         public TreeNode(int val) {
             this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
         }
     }
 
@@ -43,6 +34,7 @@ public class BinarySearchTree {
         } else if(val > root.val){
             root.right = delete(root.right,val);
         } else {
+            // root.val == val
             if (root.left == null && root.right == null) return null;
             else if(root.left != null && root.right == null) return root.left;
             else if(root.left == null) return root.right;
@@ -60,7 +52,13 @@ public class BinarySearchTree {
     }
 
     public void add(int val){
+        if (contains(root,val)) return;
         root = insert(root,val);
+    }
+
+    public void remove(int val){
+        if (!contains(root,val)) return;
+        root = delete(root,val);
     }
 
     public boolean search(TreeNode root,int val){
@@ -83,5 +81,6 @@ public class BinarySearchTree {
         display(root.left);
         System.out.print(root.val + " ");
         display(root.right);
+
     }
 }

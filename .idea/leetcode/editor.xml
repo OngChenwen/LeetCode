@@ -12,12 +12,48 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/AverageSellingPrice.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/AverageSellingPrice.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/AverageSellingPrice.java" />
+              <option name="questionId" value="1390" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/IncreasingOrderSearchTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/IncreasingOrderSearchTree.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/IncreasingOrderSearchTree.java" />
+              <option name="questionId" value="933" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/LargestNumber.java">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/LargestNumber.md" />
               <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/LargestNumber.java" />
               <option name="questionId" value="179" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/MatrixDiagonalSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/MatrixDiagonalSum.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/MatrixDiagonalSum.java" />
+              <option name="questionId" value="1677" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/MergeTwoBinaryTrees.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/MergeTwoBinaryTrees.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/MergeTwoBinaryTrees.java" />
+              <option name="questionId" value="617" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -66,12 +102,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortArrayByParity.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/SortArrayByParity.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortArrayByParity.java" />
+              <option name="questionId" value="941" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortFeaturesByPopularity.java">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/SortFeaturesByPopularity.md" />
               <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortFeaturesByPopularity.java" />
               <option name="questionId" value="1919" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortingTheSentence.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/doc/content/SortingTheSentence.md" />
+              <option name="path" value="$PROJECT_DIR$/../LeetCodeExercise/leetcode/editor/en/SortingTheSentence.java" />
+              <option name="questionId" value="1970" />
             </LeetcodeEditor>
           </value>
         </entry>

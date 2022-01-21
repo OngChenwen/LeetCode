@@ -17,7 +17,7 @@ public class ValidString {
         Stack<Character> stack = new Stack<>();
         char[] chars = s.toCharArray();
         for (char c: chars) {
-            if (stack.isEmpty() || stack.peek() == c) stack.push(c);
+            if (stack.isEmpty() || stack.peek() != c) stack.push(c);
             else stack.pop();
         }
 

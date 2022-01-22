@@ -8,7 +8,7 @@ public class GroupAverage {
     }
 
     static int helper(int[] arr){
-        int n = arr.length, ans = Integer.MAX_VALUE,res = 0;
+        int n = arr.length, min = Integer.MAX_VALUE,res = 0;
         int[] pre = new int[n];
         pre[0] = arr[0];
         for (int i = 1; i < n; i++) {
@@ -19,10 +19,13 @@ public class GroupAverage {
             int leftAv = pre[i]/(i + 1);
             int rightAv = (pre[n - 1] - pre[i])/(n - i - 1);
 
-            ans = Math.min(ans,(Math.abs(leftAv - rightAv)));
+             if(Math.abs(leftAv - rightAv) < min) {
+                 min = Math.abs(leftAv - rightAv);
+                 res = i;
+             }
         }
 
 
-        return ans;
+        return res + 1;
     }
 }

@@ -23,6 +23,7 @@ public class TireTree {
         for(int i = 0; i < word.length();i++){
             char ch = word.charAt(i);
             if(!node.successor.containsKey(ch)) {
+                // new TreeNode() like a pointer, point to next
                 node.successor.put(ch,new TreeNode());
             }
             // move node

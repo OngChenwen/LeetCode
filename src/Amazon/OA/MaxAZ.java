@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.OA;
 
 // String add one A to get maximum "AZ"
 public class MaxAZ {

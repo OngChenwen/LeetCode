@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.OA;
 
 // TODO: 2022-01-20 Need know the output format 
 public class GroupAverage {

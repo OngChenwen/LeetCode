@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.OA;
 
 public class AlphabetWheel {
     public static void main(String[] args) {

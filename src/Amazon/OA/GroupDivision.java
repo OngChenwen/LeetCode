@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.OA;
 
 import java.util.Arrays;
 

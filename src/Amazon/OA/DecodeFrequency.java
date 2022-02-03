@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.OA;
 
 public class DecodeFrequency {
     public static void main(String[] args) {
